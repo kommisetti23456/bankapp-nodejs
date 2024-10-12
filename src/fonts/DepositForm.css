@@ -1,0 +1,73 @@
+/* DepositForm.css */
+
+.deposit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+  }
+  
+  .text-deposit-container {
+    background-color: white; /* White background for form */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 400px; /* Fixed width */
+  }
+  
+  h2 {
+    text-align: center; /* Center heading */
+    margin-bottom: 20px; /* Space below heading */
+  }
+  
+  label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+  }
+  
+  input[type="date"],
+  input[type="number"],
+  input[type="text"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded input corners */
+    font-size: 14px; /* Font size for inputs */
+  }
+  
+  input[type="date"]:focus,
+  input[type="number"]:focus,
+  input[type="text"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  button {
+    width: 48%; /* Button width */
+    padding: 10px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button corners */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor */
+    margin: 0 1%; /* Margin between buttons */
+    transition: background-color 0.3s; /* Smooth background change */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  button[type="submit"]:nth-of-type(2) {
+    background-color: #f44336; /* Red for clear button */
+  }
+  
+  button[type="submit"]:nth-of-type(2):hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  

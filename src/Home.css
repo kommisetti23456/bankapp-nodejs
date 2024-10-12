@@ -1,0 +1,54 @@
+.home {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.image {
+  background-image: url("./images/bank.png");
+  width: 50%;
+  height: 100vh;
+  background-size: cover; /* Cover for better aspect ratio */
+  background-position: center; /* Center the image */
+}
+
+.text {
+  width: 50%;
+  max-width: 500px; /* Limit max width */
+  margin: auto; /* Center the text container */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex: 1; /* Allow text to grow and fill space */
+}
+
+.text h2 {
+  color: aqua;
+  margin-bottom: 15px; /* Space below heading */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .image,
+  .text {
+      width: 100%; /* Stack vertically on smaller screens */
+      height: auto; /* Allow height to adjust */
+  }
+}
+
+@media (max-width: 500px) {
+  .text {
+      padding: 15px; /* Reduce padding on very small screens */
+  }
+
+  .text h2 {
+      font-size: 1.5em; /* Adjust heading size */
+  }
+
+  .text p {
+      font-size: 0.9em; /* Adjust paragraph size */
+  }
+}
+
+ 

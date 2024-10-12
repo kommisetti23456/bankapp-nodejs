@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+ /* Global Styles */
+* {
+  box-sizing: border-box; /* Ensure consistent box sizing */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set font */
+  line-height: 1.6; /* Improve readability */
+  background-color: #f4f4f4; /* Background color for contrast */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Navigation Styles */
+nav {
+  background-color: palevioletred; /* Background color for nav */
+  padding: 10px 20px; /* Padding inside nav */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullets */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-around; /* Space items evenly */
+}
+
+nav li {
+  margin: 0 15px; /* Spacing between items */
+  color: white; /* Text color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+nav li:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Common Container for All Components */
+.container {
+  max-width: 1200px; /* Max width for container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding inside container */
+}
+
+/* Flexbox Utility Classes */
+.flex {
+  display: flex; /* Enable flexbox */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.flex-column {
+  flex-direction: column; /* Column layout */
+}
+
+.flex-row {
+  flex-direction: row; /* Row layout */
+}
+
+.align-center {
+  align-items: center; /* Center alignment */
+}
+
+.justify-between {
+  justify-content: space-between; /* Space between items */
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4 {
+  margin: 0 0 10px; /* Margin below headings */
+}
+
+p {
+  margin: 5px 0; /* Margin for paragraphs */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px; /* Reduced padding */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Smaller heading size */
+  }
+
+  p {
+    font-size: 0.9em; /* Smaller paragraph size */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Further reduced padding */
   }
-  to {
-    transform: rotate(360deg);
+
+  h2 {
+    font-size: 1.3em; /* Even smaller heading size */
+  }
+
+  p {
+    font-size: 0.8em; /* Even smaller paragraph size */
   }
 }
+
+

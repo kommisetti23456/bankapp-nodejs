@@ -1,0 +1,71 @@
+ /* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e9ecef; /* Light grey background */
+  padding: 20px;
+}
+
+.text-login-container {
+  background-color: white; /* White background for form */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px; /* Fixed width */
+}
+
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for inputs */
+  margin-bottom: 15px; /* Space below inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded input corners */
+  font-size: 14px; /* Font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  width: 48%; /* Button width */
+  padding: 10px; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded button corners */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  font-size: 16px; /* Font size for buttons */
+  cursor: pointer; /* Pointer cursor */
+  margin: 0 1%; /* Margin between buttons */
+  transition: background-color 0.3s; /* Smooth background change */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error-msg {
+  color: #f44336; /* Red for error messages */
+  margin-bottom: 15px; /* Space below error messages */
+  text-align: center; /* Center error messages */
+}
+
+p {
+  text-align: center; /* Center text for additional information */
+  margin-top: 10px; /* Space above paragraphs */
+  color: #6c757d; /* Grey text for secondary information */
+}
+
+  
